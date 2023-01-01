@@ -23,8 +23,8 @@ dependencies:
   counter_storage:
     path: '../counter_storage'
 
-  package_c:
-    path: '../package_c'
+  logger:
+    path: '../logger'
 
 dev_dependencies:
   flutter_test:

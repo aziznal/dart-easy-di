@@ -5,7 +5,7 @@ import './di.config.dart';
 
 import 'package:counter/counter.dart' as counter;
 import 'package:counter_storage/counter_storage.dart' as counter_storage;
-import 'package:package_c/package_c.dart' as package_c;
+import 'package:logger/logger.dart' as logger;
 
 GetIt diInstance = GetIt.instance;
 
@@ -24,6 +24,6 @@ void configureDependencies() {
   print("🛠️  configuring counter_storage dependencies...");
   counter_storage.configureDependencies(diInstance);
 
-  print("🛠️  configuring package_c dependencies...");
-  package_c.configureDependencies(diInstance);
+  print("🛠️  configuring logger dependencies...");
+  logger.configureDependencies(diInstance);
 }

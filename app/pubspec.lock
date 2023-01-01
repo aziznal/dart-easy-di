@@ -333,17 +333,17 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.3"
-  package_c:
+  logger:
     dependency: "direct main"
     description:
-      path: "../package_c"
+      path: "../logger"
       relative: true
     source: path
     version: "1.0.0"
-  package_config:
+  loggeronfig:
     dependency: transitive
     description:
-      name: package_config
+      name: loggeronfig
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"

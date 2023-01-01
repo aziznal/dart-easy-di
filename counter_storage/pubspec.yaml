@@ -17,6 +17,9 @@ dependencies:
   counter:
     path: "../counter"
 
+  logger:
+    path: '../logger'
+
   get_it: ^7.2.0
   injectable: ^2.1.0
   injectable_generator: ^2.1.3

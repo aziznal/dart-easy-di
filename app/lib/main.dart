@@ -1,8 +1,10 @@
-import 'package:app/di/di.dart';
+import 'package:app/di/di.dart' as app;
+import 'package:counter/counter.dart';
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
 
 void main() {
-  configureDependencies();
+  app.configureDependencies();
 
   runApp(const MyApp());
 }
@@ -32,11 +34,12 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  final Counter _counter = app.diInstance<Counter>();
+  final Logger _logger = app.diInstance<Logger>();
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _counter.inc();
     });
   }
 
@@ -54,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '${_counter.value}',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],

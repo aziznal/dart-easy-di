@@ -298,6 +298,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+  logger:
+    dependency: "direct main"
+    description:
+      path: "../logger"
+      relative: true
+    source: path
+    version: "1.0.0"
   logging:
     dependency: transitive
     description:
@@ -333,17 +340,10 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.3"
-  logger:
-    dependency: "direct main"
-    description:
-      path: "../logger"
-      relative: true
-    source: path
-    version: "1.0.0"
-  loggeronfig:
+  package_config:
     dependency: transitive
     description:
-      name: loggeronfig
+      name: package_config
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"

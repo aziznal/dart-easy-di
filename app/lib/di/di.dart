@@ -9,11 +9,11 @@ import 'package:logger/logger.dart' as logger;
 
 GetIt diInstance = GetIt.instance;
 
-@InjectableInit(  
+@InjectableInit(
   initializerName: 'init',
   preferRelativeImports: true,
   asExtension: false,
-)  
+)
 void configureDependencies() {
   print("🛠️  configuring app dependencies...");
   init(diInstance);

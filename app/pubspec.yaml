@@ -14,14 +14,15 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
+  di:
+    path: '../di'
+
   counter:
     path: '../counter'
 
-  counter_storage:
-    path: '../counter_storage'
-
   logger:
     path: '../logger'
+
   get_it: ^7.2.0
   injectable: ^2.1.0
   

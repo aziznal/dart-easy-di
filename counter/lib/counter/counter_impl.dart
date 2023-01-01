@@ -1,6 +1,10 @@
+
 import './counter_storage.dart';
 import './counter.dart';
 
+import 'package:injectable/injectable.dart';
+
+@Injectable(as: Counter)
 class CounterImpl implements Counter {
   CounterImpl(this._counterStorage);
 

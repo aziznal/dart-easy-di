@@ -1,5 +1,8 @@
 import 'package:counter/counter.dart';
 
+import 'package:injectable/injectable.dart';
+
+@LazySingleton(as: CounterStorage)
 class CounterStorageImpl implements CounterStorage {
   int _currentCounterValue = 0;
 

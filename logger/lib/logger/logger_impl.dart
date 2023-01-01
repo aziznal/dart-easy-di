@@ -1,5 +1,8 @@
 import './logger.dart';
 
+import 'package:injectable/injectable.dart';
+
+@LazySingleton(as: Logger)
 class LoggerImpl implements Logger {
   @override
   void info(String msg) {

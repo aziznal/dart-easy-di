@@ -20,8 +20,8 @@ dependencies:
   counter:
     path: '../counter'
 
-  package_b:
-    path: '../package_b'
+  counter_storage:
+    path: '../counter_storage'
 
   package_c:
     path: '../package_c'
